@@ -1,5 +1,5 @@
 import React, { useMemo, useState } from "react";
-import artemPhoto from "./assets/artem-photo.JPG";
+import artemPhoto from "./assets/artem-photo.png";
 
 const CONTACTS = {
   email: "artem@podolskii.com",
