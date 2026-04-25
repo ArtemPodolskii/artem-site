@@ -1,4 +1,5 @@
 import React, { useMemo, useState } from "react";
+import { Analytics } from "@vercel/analytics/react";
 import artemPhoto from "./assets/artem-photo.png";
 
 const CONTACTS = {
@@ -149,7 +150,9 @@ export default function ArtemPodolskiiLanding() {
         <section id="contact" className="mx-auto max-w-7xl px-5 pb-10 sm:px-8 lg:pb-16"><div className="overflow-hidden rounded-[2rem] border border-cyan-300/20 bg-cyan-300/[0.08] p-8 sm:p-10 lg:p-12"><div className="grid gap-8 lg:grid-cols-[1fr_0.9fr] lg:items-end"><div><SectionLabel>Contact</SectionLabel><h2 className="max-w-3xl text-3xl font-semibold tracking-[-0.03em] text-white sm:text-5xl">{t.contactTitle}</h2><p className="mt-5 max-w-2xl text-base leading-8 text-slate-300">{t.contactText}</p><a href={"mailto:" + CONTACTS.email + "?subject=Compliance consulting request"} className="mt-8 inline-flex items-center gap-2 rounded-full bg-cyan-300 px-6 py-3 text-sm font-semibold text-slate-950 transition hover:bg-cyan-200">{t.cta} →</a></div><div className="flex flex-wrap gap-3 lg:justify-end"><ContactLink href={"mailto:" + CONTACTS.email}>{CONTACTS.email}</ContactLink><ContactLink href={CONTACTS.phoneHref}>{CONTACTS.phone}</ContactLink><ContactLink href={CONTACTS.telegramUrl}>{CONTACTS.telegram}</ContactLink><ContactLink href={CONTACTS.linkedin}>LinkedIn</ContactLink></div></div></div></section>
       </main>
 
-      <footer className="relative z-10 border-t border-white/10 px-5 py-8 sm:px-8"><div className="mx-auto flex max-w-7xl flex-col gap-4 text-sm text-slate-500 md:flex-row md:items-center md:justify-between"><div>© {new Date().getFullYear()} Artem Podolskii • {CONTACTS.domain}</div><div>{t.footer}</div></div></footer>
+   <footer className="relative z-10 border-t border-white/10 px-5 py-8 sm:px-8"><div className="mx-auto flex max-w-7xl flex-col gap-4 text-sm text-slate-500 md:flex-row md:items-center md:justify-between"><div>© {new Date().getFullYear()} Artem Podolskii • {CONTACTS.domain}</div><div>{t.footer}</div></div></footer>
+
+      <Analytics />
     </div>
   );
 }
