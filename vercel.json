@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/guide",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/guide/",
+      "destination": "/index.html"
+    }
+  ]
+}

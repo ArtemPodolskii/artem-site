@@ -1,5 +1,6 @@
 import React, { useMemo, useState } from "react";
 import { Analytics } from "@vercel/analytics/react";
+import GuidePage from "./Guide.jsx";
 import artemPhoto from "./assets/artem-photo.png";
 
 const CONTACTS = {
@@ -102,6 +103,7 @@ function ContactLink({ href, children }) {
 
 export default function ArtemPodolskiiLanding() {
   const [lang, setLang] = useState("en");
+  if (window.location.pathname === "/guide" || window.location.pathname === "/guide/") return <GuidePage />;
   const t = useMemo(() => content[lang], [lang]);
   const scrollTo = (id) => document.getElementById(id)?.scrollIntoView({ behavior: "smooth", block: "start" });
 
