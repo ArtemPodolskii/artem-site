@@ -7,6 +7,8 @@ const CONTACTS = {
   linkedin: "https://www.linkedin.com/in/artem-podolskii-59770425a/",
 };
 
+const INFOGRAPHIC_URL = "/images/technical-compliance-delivery-igaming-markets.jpg";
+
 const steps = [
   {
     n: "01",
@@ -104,8 +106,20 @@ export default function GuidePage() {
             </p>
 
             <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-300">
-              A practical overview of the B2B technical compliance process for iGaming providers — from regulatory research and gap analysis to certification, licensing support and continuous monitoring.
-            </p>
+  A practical overview of the B2B technical compliance process for iGaming providers — from regulatory research and gap analysis to certification, licensing support and continuous monitoring.
+</p>
+
+<div className="mt-10 overflow-hidden rounded-[2rem] border border-cyan-300/20 bg-white/[0.035] p-3 shadow-2xl shadow-cyan-950/30">
+  <img
+    src={INFOGRAPHIC_URL}
+    alt="Technical Compliance Delivery for Regulated iGaming Markets — 3-phase compliance and certification process from regulatory research to continuous monitoring"
+    className="w-full rounded-[1.5rem] border border-white/10 object-cover"
+    loading="lazy"
+  />
+</div>
+</div>
+
+<div className="mt-10 rounded-[2rem] border border-cyan-300/20 bg-cyan-300/[0.08] p-6 sm:p-8">
           </div>
 
           <div className="mt-10 rounded-[2rem] border border-cyan-300/20 bg-cyan-300/[0.08] p-6 sm:p-8">
