@@ -126,6 +126,39 @@ export default function GuidePage() {
               B2B technical compliance is often delayed not by testing itself, but by unclear scope, missing evidence, weak ownership and poor coordination between product, QA, IT, legal, external laboratories and regulators.
             </p>
           </div>
+<div className="mt-6 rounded-[2rem] border border-white/10 bg-white/[0.035] p-6 sm:p-8">
+  <div className="mb-4 inline-flex rounded-full border border-cyan-300/20 bg-cyan-300/10 px-3 py-2 text-xs font-medium uppercase tracking-[0.22em] text-cyan-200">
+    AI-assisted workflow
+  </div>
+
+  <h2 className="text-2xl font-semibold text-white">
+    AI-assisted version of this workflow
+  </h2>
+
+  <p className="mt-4 max-w-4xl text-base leading-8 text-slate-300">
+    The same compliance lifecycle can be supported by an internal AI agent: monitor regulatory sources, answer questions with source references, identify gaps between requirements and generate implementation-ready tickets for product, QA and engineering teams.
+  </p>
+
+  <p className="mt-4 max-w-4xl text-base leading-8 text-slate-300">
+    Human review remains essential. The value is speed, structure and traceability — not blind automation.
+  </p>
+
+  <div className="mt-6 grid gap-3 md:grid-cols-2">
+    {[
+      "Regulatory source monitoring",
+      "Source-based compliance Q&A",
+      "Gap and conflict detection",
+      "Jira-ready implementation tickets",
+      "Visible uncertainty instead of fabricated answers",
+      "Human compliance owner remains accountable",
+    ].map((item) => (
+      <div key={item} className="flex items-start gap-2 rounded-2xl border border-white/10 bg-[#0b171d] p-4 text-sm text-slate-300">
+        <span className="mt-0.5 shrink-0 text-cyan-300">✓</span>
+        <span>{item}</span>
+      </div>
+    ))}
+  </div>
+</div>
         </section>
 
         <section className="border-y border-white/10 bg-white/[0.025]">
