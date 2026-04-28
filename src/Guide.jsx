@@ -119,8 +119,6 @@ export default function GuidePage() {
 </div>
 </div>
 
-<div className="mt-10 rounded-[2rem] border border-cyan-300/20 bg-cyan-300/[0.08] p-6 sm:p-8">
-          </div>
 
           <div className="mt-10 rounded-[2rem] border border-cyan-300/20 bg-cyan-300/[0.08] p-6 sm:p-8">
             <h2 className="text-2xl font-semibold text-white">Why this matters</h2>
